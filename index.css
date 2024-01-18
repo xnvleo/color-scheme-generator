@@ -1,0 +1,107 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  width: 98%;
+  max-width: 700px;
+  min-width: 375px;
+  margin: auto;
+  box-shadow: 0px 10px 103px -50px rgba(0, 0, 0, 0.29);
+}
+
+/* header: form */
+
+form,
+.color-names {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fffdfe;
+}
+
+form {
+  height: 90px;
+gap:0.1em;
+padding: 0 0.2em;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+input,
+select,
+button {
+  cursor: pointer;
+  font-family: inherit;
+  height: 42px;
+}
+
+select,
+button {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: white;
+}
+
+input {
+  /* width: 61px; */
+  border: 0.5px solid #d1d5db;
+  background: #e5e5e5;
+}
+
+select {
+  /* width: 312px; */
+  padding: 0.5em 1em 0.5em 0.8em;
+}
+
+button {
+  padding: 1em;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* color bars */
+.colors {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.color-bars,
+.color-names {
+  display: flex;
+  flex-direction: row;
+}
+.color-bars {
+  height: 100%;
+}
+
+.color-display {
+  width: 20%;
+  box-shadow: 0px 30px 15px -18px rgba(0, 0, 0, 0.15) inset;
+}
+
+.color-code {
+  padding: 1em 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+
+/* Dark version */
+
+form.dark,
+.color-names.dark,
+select.dark {
+  color: #ffffff;
+  background-color: #1f2937;
+}
+
+button.dark {
+  background: #3D4B60;
+  color: #ffffff;
+}

@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <form class="dark">
+        <input type="color" id="seed-color" value="#F55A5A" />
+        <select class="dark">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="complement">Complement</option>
+          <option value="analogic">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button class="dark">Get color scheme</button>
+      </form>
+      <div class="colors">
+        <div id="color-bars" class="color-bars">
+          <div class="color-display" style="background-color: F55A5A"></div>
+          <div class="color-display" style="background-color: 2B283A"></div>
+          <div class="color-display" style="background-color: FBF3AB"></div>
+          <div class="color-display" style="background-color: AAD1B6"></div>
+          <div class="color-display" style="background-color: A626D3"></div>
+        </div>
+
+        <div id="color-names" class="color-names dark">
+          <div class="color-code">#F55A5A</div>
+          <div class="color-code">#2B283A</div>
+          <div class="color-code">#FBF3AB</div>
+          <div class="color-code">#AAD1B6</div>
+          <div class="color-code">#A626D3</div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
